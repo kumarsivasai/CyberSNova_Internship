@@ -1,0 +1,251 @@
+============================================================
+CYBERSNOVA
+CYBER SECURITY INTERNSHIP
+
+PROJECT 2: PORTSWIGGER WEB SECURITY ACADEMY LABS
+EVIDENCE COLLECTION GUIDELINES
+============================================================
+
+1. PURPOSE
+============================================================
+
+This document defines the standard for collecting, organizing,
+naming, and presenting evidence for the five PortSwigger Web
+Security Academy laboratories.
+
+The objective is to ensure that every vulnerability is supported
+by clear, relevant, and reproducible technical evidence.
+
+============================================================
+
+2. EVIDENCE PRINCIPLES
+============================================================
+
+Evidence must be:
+
+- Accurate.
+- Relevant.
+- Clearly visible.
+- Reproducible.
+- Directly related to the vulnerability.
+- Associated with the correct laboratory.
+- Free from unnecessary personal information.
+
+Screenshots must represent the tester's actual testing activity.
+
+============================================================
+
+3. STANDARD EVIDENCE STRUCTURE
+============================================================
+
+Each laboratory will use the same four evidence categories,
+captured as separate screenshots within that lab's folder:
+
+LAB-01
+  01 - Lab Page
+  02 - Baseline
+  03 - Exploitation
+  04 - Solved
+
+The same structure applies to LAB-02 through LAB-05.
+
+============================================================
+
+4. EVIDENCE CATEGORY 01 - LAB PAGE
+============================================================
+
+Purpose:
+
+Demonstrate the selected PortSwigger laboratory and its
+objective.
+
+Recommended screenshot:
+
+LAB-XX-01-Lab-Page.png
+
+The screenshot should preferably show:
+
+- PortSwigger Web Security Academy.
+- Lab title.
+- Lab difficulty.
+- Laboratory objective or description.
+- Relevant browser context.
+
+============================================================
+
+5. EVIDENCE CATEGORY 02 - BASELINE
+============================================================
+
+Purpose:
+
+Demonstrate normal application behavior before exploitation.
+
+Recommended screenshot:
+
+LAB-XX-02-Baseline.png
+
+Evidence may include:
+
+- Normal browser behavior.
+- Normal HTTP request.
+- Burp HTTP history.
+- Burp Repeater request.
+- Normal server response.
+
+The baseline should establish what happens before the
+security test is performed.
+
+============================================================
+
+6. EVIDENCE CATEGORY 03 - EXPLOITATION
+============================================================
+
+Purpose:
+
+Demonstrate the vulnerability and the controlled exploitation
+performed against the authorized laboratory.
+
+Recommended screenshot:
+
+LAB-XX-03-Exploitation.png
+
+Evidence may include:
+
+- Modified HTTP request.
+- Relevant parameter.
+- Test input.
+- Burp Repeater request.
+- Server response.
+- Visible security impact.
+
+The screenshot must clearly show the relevant technical
+information.
+
+============================================================
+
+7. EVIDENCE CATEGORY 04 - SOLVED
+============================================================
+
+Purpose:
+
+Demonstrate successful completion of the PortSwigger
+laboratory.
+
+Recommended screenshot:
+
+LAB-XX-04-Solved.png
+
+The screenshot should show PortSwigger's confirmation that
+the laboratory has been solved.
+
+============================================================
+
+8. SCREENSHOT QUALITY
+============================================================
+
+Screenshots should:
+
+- Be clear and readable.
+- Include relevant application context.
+- Avoid excessive cropping.
+- Avoid unnecessary desktop content.
+- Avoid unrelated browser tabs.
+- Avoid personal information.
+- Avoid unnecessary credentials.
+- Avoid exposing sensitive session information.
+
+============================================================
+
+9. BURP SUITE SCREENSHOTS
+============================================================
+
+When capturing Burp evidence, the screenshot should show
+enough information to understand:
+
+- HTTP method.
+- Relevant URL or endpoint.
+- Parameter being tested.
+- Modified input, where applicable.
+- HTTP status code.
+- Relevant response.
+
+Unnecessary headers or unrelated traffic should not dominate
+the screenshot.
+
+============================================================
+
+10. FILE NAMING STANDARD
+============================================================
+
+Use the following naming convention:
+
+LAB-01-01-Lab-Page.png
+LAB-01-02-Baseline.png
+LAB-01-03-Exploitation.png
+LAB-01-04-Solved.png
+
+For LAB-02:
+
+LAB-02-01-Lab-Page.png
+LAB-02-02-Baseline.png
+LAB-02-03-Exploitation.png
+LAB-02-04-Solved.png
+
+The same pattern applies to LAB-03, LAB-04, and LAB-05.
+
+============================================================
+
+11. EVIDENCE STORAGE
+============================================================
+
+Evidence must be stored in the corresponding laboratory folder:
+
+02_Lab_Evidence\LAB-01\
+02_Lab_Evidence\LAB-02\
+02_Lab_Evidence\LAB-03\
+02_Lab_Evidence\LAB-04\
+02_Lab_Evidence\LAB-05\
+
+Each screenshot should be placed in its corresponding lab
+folder, named according to Section 10.
+
+============================================================
+
+12. EVIDENCE VALIDATION
+============================================================
+
+Before final submission, verify that:
+
+[ ] Lab page screenshot exists.
+[ ] Baseline evidence exists.
+[ ] Exploitation evidence exists.
+[ ] Solved/completion screenshot exists.
+[ ] Screenshots are readable.
+[ ] Screenshots correspond to the correct lab.
+[ ] Evidence matches the report.
+[ ] No unrelated systems are shown.
+[ ] No unnecessary sensitive information is exposed.
+
+============================================================
+
+13. REPORT CROSS-REFERENCE
+============================================================
+
+Each screenshot must be referenced in the corresponding
+laboratory section of the technical report.
+
+Example:
+
+Figure 1 - PortSwigger laboratory page.
+Figure 2 - Normal request captured using Burp Suite.
+Figure 3 - Modified request demonstrating the vulnerability.
+Figure 4 - Successful laboratory completion.
+
+============================================================
+
+Prepared By: Mallampalli Kumar Siva Sai
+Organization: CyberSNova
+Lab Level: Intermediate Level
+Date: 07-10-2026
+
+============================================================

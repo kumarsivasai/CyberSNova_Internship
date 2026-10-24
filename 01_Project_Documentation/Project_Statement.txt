@@ -1,0 +1,138 @@
+============================================================
+CYBERSNOVA
+CYBER SECURITY INTERNSHIP
+
+PROJECT 2: PORTSWIGGER WEB SECURITY ACADEMY LABS
+APPRENTICE-LEVEL LAB ASSESSMENT
+============================================================
+
+1. PROJECT TITLE
+============================================================
+
+PortSwigger Web Security Academy – Apprentice-Level Web
+Application Security Lab Assessment
+
+============================================================
+
+2. PROBLEM STATEMENT
+============================================================
+
+The objective of this project is to complete any five
+Apprentice-level labs available on the PortSwigger Web
+Security Academy.
+
+For each selected laboratory, the vulnerability will be
+identified, analyzed, and successfully demonstrated within
+the authorized PortSwigger training environment.
+
+The assessment will document the vulnerability, testing
+methodology, exploitation process, technical evidence,
+security impact, and appropriate defensive measures.
+
+============================================================
+
+3. PROJECT OBJECTIVE
+============================================================
+
+The primary objective is to develop practical web application
+security testing skills through controlled and intentionally
+vulnerable environments.
+
+The project focuses on:
+
+- Understanding common web application vulnerabilities.
+- Using Burp Suite to intercept and analyze HTTP requests.
+- Identifying vulnerable parameters and application behavior.
+- Safely validating vulnerabilities in authorized labs.
+- Understanding the security impact of vulnerabilities.
+- Developing appropriate mitigation recommendations.
+- Maintaining professional penetration-testing documentation.
+
+============================================================
+
+4. PLATFORM
+============================================================
+
+PortSwigger Web Security Academy
+
+Website:
+https://portswigger.net/web-security
+
+============================================================
+
+5. NUMBER OF LABS
+============================================================
+
+Five (5) Apprentice-level labs will be completed.
+
+LAB-01: To be selected
+LAB-02: To be selected
+LAB-03: To be selected
+LAB-04: To be selected
+LAB-05: To be selected
+
+============================================================
+
+6. EXPECTED DELIVERABLES
+============================================================
+
+The final submission will contain:
+
+1. Five completed Apprentice-level labs.
+2. Screenshots demonstrating the testing process.
+3. Lab completion proof.
+4. Technical explanation of each vulnerability.
+5. Exploitation methodology.
+6. Security impact assessment.
+7. Root-cause analysis.
+8. Recommended defensive measures.
+9. Professional technical report.
+
+============================================================
+
+7. TESTING APPROACH
+============================================================
+
+The assessment will follow a structured security-testing
+methodology:
+
+Reconnaissance
+      ↓
+Application Understanding
+      ↓
+Request Interception
+      ↓
+Input / Parameter Analysis
+      ↓
+Vulnerability Identification
+      ↓
+Controlled Exploitation
+      ↓
+Impact Analysis
+      ↓
+Evidence Collection
+      ↓
+Mitigation Recommendation
+      ↓
+Final Documentation
+
+============================================================
+
+8. AUTHORIZATION
+============================================================
+
+All testing performed as part of this project will be
+restricted to PortSwigger Web Security Academy laboratories
+and will remain within the authorized training environment.
+
+No unrelated websites, production systems, or third-party
+applications will be tested.
+
+============================================================
+
+Prepared By: Mallampalli Kumar Siva Sai
+Organization: CyberSNova
+Lab Level: Intermediate Level
+Date: 07-10-2026
+
+============================================================

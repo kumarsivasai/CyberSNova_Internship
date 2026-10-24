@@ -1,0 +1,186 @@
+============================================================
+CYBERSNOVA
+CYBER SECURITY INTERNSHIP
+
+PROJECT 2: PORTSWIGGER WEB SECURITY ACADEMY LABS
+TOOLS AND TESTING ENVIRONMENT
+============================================================
+
+1. ASSESSMENT PLATFORM
+============================================================
+
+Platform:
+PortSwigger Web Security Academy
+
+Website:
+https://portswigger.net/web-security
+
+Purpose:
+Authorized web application security training and vulnerability
+assessment laboratory environment.
+
+============================================================
+
+2. PRIMARY SECURITY TESTING TOOL
+============================================================
+
+Tool:
+Burp Suite Community Edition
+
+Purpose:
+
+Burp Suite is used as the primary web application security
+testing tool for:
+
+- Intercepting HTTP requests and responses.
+- Reviewing application traffic.
+- Identifying parameters and inputs.
+- Modifying requests.
+- Replaying requests using Repeater.
+- Analyzing server responses.
+- Validating vulnerabilities.
+
+============================================================
+
+3. BURP SUITE COMPONENTS
+============================================================
+
+The following Burp Suite components may be used:
+
+3.1 Proxy
+------------------------------
+
+Used to intercept and inspect HTTP/HTTPS traffic between the
+browser and the authorized PortSwigger laboratory.
+
+3.2 HTTP History
+------------------------------
+
+Used to review previously captured requests and responses.
+
+3.3 Repeater
+------------------------------
+
+Used to manually modify and replay HTTP requests to validate
+security behavior.
+
+3.4 Target / Site Map
+------------------------------
+
+Used to understand the application's accessible endpoints and
+identify relevant functionality.
+
+============================================================
+
+4. WEB BROWSER
+============================================================
+
+Browser:
+Burp Browser / Chromium-based browser
+
+Purpose:
+
+- Accessing PortSwigger laboratory environments.
+- Interacting with application functionality.
+- Generating HTTP requests.
+- Confirming application behavior.
+- Capturing lab completion evidence.
+
+============================================================
+
+5. OPERATING SYSTEM
+============================================================
+
+Operating System:
+Windows 11
+
+Testing environment:
+Local workstation
+
+Note:
+The operating system and browser configuration may be updated
+if required during the assessment.
+
+============================================================
+
+6. SUPPORTING TOOLS
+============================================================
+
+The following tools may be used where required:
+
+- Browser Developer Tools
+- Screenshot utility
+- Windows PowerShell
+- Text editor / Notepad
+
+These tools are used for documentation, traffic inspection,
+and evidence collection.
+
+============================================================
+
+7. TESTING CONFIGURATION
+============================================================
+
+Traffic Flow:
+
+Web Browser
+     |
+     v
+Burp Suite Proxy
+     |
+     v
+PortSwigger Lab
+     |
+     v
+HTTP Response
+     |
+     v
+Burp Suite
+     |
+     v
+Web Browser
+
+============================================================
+
+8. EVIDENCE STORAGE
+============================================================
+
+All screenshots and supporting evidence will be stored in:
+
+02_Lab_Evidence/
+
+Each laboratory will have its own dedicated folder:
+
+LAB-01
+LAB-02
+LAB-03
+LAB-04
+LAB-05
+
+Within each lab folder, evidence will be named according to
+the four evidence categories:
+
+01-Lab-Page
+02-Baseline
+03-Exploitation
+04-Solved
+
+============================================================
+
+9. TOOL USAGE PRINCIPLE
+============================================================
+
+Tools will be used only to assess the authorized PortSwigger
+laboratory environments.
+
+No testing will be performed against unrelated systems or
+third-party applications.
+
+============================================================
+
+Prepared By: Mallampalli Kumar Siva Sai
+Organization: CyberSNova
+Lab Level: Intermediate Level
+Date: 07-10-2026
+
+============================================================

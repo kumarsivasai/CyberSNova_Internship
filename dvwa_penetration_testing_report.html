@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DVWA penetration testing project report - CyberSNova Cyber Security Internship">
+  <title>DVWA Penetration Testing Report | CyberSNova</title>
+  <style>
+    :root {
+      --bg: #080808; --panel: #141414; --panel2: #1d1113;
+      --text: #f5f5f5; --muted: #b8b0b0; --accent: #ff2b3d;
+      --line: #392126; --red: #ff4d5a; --orange: #ffbd69; --blue: #86b8ff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 86px; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 Arial, Helvetica, sans-serif; }
+    a { color: var(--accent); text-decoration: none; transition: color .2s ease; }
+    a:hover { text-decoration: underline; color: #ff7b86; }
+    ::selection { background: #ff2b3d; color: #fff; }
+
+    .topbar { position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 5%; background: rgba(8,8,8,.95); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
+    .brand { font-weight: 800; letter-spacing: .08em; color: var(--accent); text-shadow: 0 0 18px rgba(255,43,61,.28); }
+    nav { display: flex; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
+    nav a { color: var(--muted); font-size: .9rem; }
+
+    .hero { padding: 76px 6% 58px; background: radial-gradient(circle at 82% 18%, rgba(255,43,61,.24) 0, transparent 30%), radial-gradient(circle at 12% 88%, rgba(160,0,20,.16) 0, transparent 32%), linear-gradient(135deg,#16090b,#080808 68%); border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
+    .eyebrow { color: #ff5968; text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 700; }
+    h1 { font-size: clamp(2.3rem, 6vw, 4.5rem); line-height: 1.08; max-width: 900px; margin: 12px 0 20px; }
+    h2 { font-size: clamp(1.5rem, 3vw, 2.15rem); margin: 0 0 18px; letter-spacing: -.025em; }
+    h2::after { content: ""; display: block; width: 54px; height: 3px; margin-top: 10px; border-radius: 3px; background: linear-gradient(90deg, #ff2b3d, transparent); }
+    h3 { margin: 0 0 8px; }
+    .lead { max-width: 850px; color: var(--muted); font-size: 1.12rem; }
+    .wrap { width: min(1120px, 90%); margin: auto; }
+    section { padding: 54px 0; border-bottom: 1px solid var(--line); }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .card { background: linear-gradient(145deg, #181515, #101010); border: 1px solid var(--line); border-radius: 16px; padding: 22px; box-shadow: 0 12px 30px rgba(0,0,0,.22); transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+    .card:hover { transform: translateY(-4px); border-color: rgba(255,43,61,.7); box-shadow: 0 16px 34px rgba(255,20,40,.09); }
+    .card h3 { color: #fff; }
+    .card p { color: var(--muted); margin-bottom: 0; }
+
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; margin-top: 28px; max-width: 800px; }
+    .stat { background: linear-gradient(145deg, rgba(36,12,16,.96), rgba(17,17,17,.96)); border: 1px solid var(--line); border-radius: 12px; padding: 16px; box-shadow: inset 0 1px 0 rgba(255,255,255,.025); }
+    .stat strong { display: block; font-size: 1.8rem; color: var(--accent); }
+    .stat span { color: var(--muted); font-size: .88rem; }
+
+    .pill { display: inline-block; border-radius: 999px; padding: 3px 10px; font-size: .78rem; font-weight: 700; }
+    .critical { color: #ffd6d6; background: #632b37; }
+    .high { color: #ffe2bf; background: #684321; }
+    .medium { color: #d7e7ff; background: #24466d; }
+    .muted { color: var(--muted); }
+
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+    table { border-collapse: collapse; width: 100%; min-width: 620px; background: var(--panel); }
+    th, td { padding: 12px 14px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { color: #ff6571; background: #241013; font-size: .9rem; text-transform: uppercase; letter-spacing: .04em; }
+    tr:last-child td { border-bottom: 0; }
+    ul, ol { padding-left: 22px; }
+    li { margin: 5px 0; }
+    .notice { border-left: 4px solid var(--orange); background: #251f1a; padding: 16px 18px; border-radius: 8px; color: #f8e7d5; }
+
+    .search { width: 100%; max-width: 360px; padding: 11px 13px; border-radius: 9px; border: 1px solid var(--line); background: var(--panel); color: var(--text); margin: 0 0 14px; }
+    .search:focus { outline: 2px solid rgba(255,43,61,.65); outline-offset: 2px; }
+    .footer { padding: 28px 5%; color: var(--muted); text-align: center; }
+
+    /* Buttons */
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 12px 20px; border: 1.5px solid var(--accent); border-radius: 10px; background: rgba(255,43,61,.08); color: var(--accent); font: inherit; font-weight: 700; text-align: center; text-decoration: none; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+    .btn:hover { transform: translateY(-2px); text-decoration: none; background: rgba(255,43,61,.16); color: #ff7b86; box-shadow: 0 8px 24px rgba(255,20,40,.18); }
+    .btn-primary { background: linear-gradient(135deg, #ff3b4d, #c90022); color: #fff; border-color: #ff5361; box-shadow: 0 7px 22px rgba(255,20,40,.24); }
+    .btn-primary:hover { background: linear-gradient(135deg, #ff5361, #d9002a); color: #fff; }
+    .btn-quiet { border-color: var(--line); background: transparent; color: var(--muted); }
+    .btn-quiet:hover { color: var(--text); }
+    #safety .btn { margin-top: 12px; }
+
+    @media (max-width: 700px) { .topbar { align-items: flex-start; flex-direction: column; } nav { justify-content: flex-start; gap: 10px; } .hero { padding-top: 48px; } section { padding: 38px 0; } }
+    @media print { body { background: white; color: #111; } .topbar, .btn, .search { display: none; } .hero { background: white; color: #111; padding: 20px 0; } .lead, .muted, .card p, .footer { color: #333; } section { break-inside: avoid; } .card, table { background: white; color: #111; } th { background: #eee; color: #111; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">CYBERSNOVA · INTERN</div>
+    <nav aria-label="Main navigation">
+      <a href="#overview">Overview</a><a href="#scope">Scope</a><a href="#methodology">Methodology</a>
+      <a href="#environment">Environment</a><a href="#findings">Findings</a><a href="#safety">Safety</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="wrap">
+        <div class="eyebrow">Cyber Security Internship · Advanced Project</div>
+        <h1>DVWA Penetration Testing Report</h1>
+        <p class="lead">A hands-on vulnerability assessment and penetration testing project against the intentionally vulnerable Damn Vulnerable Web Application (DVWA), performed in an isolated local lab.</p>
+        <div class="stats">
+          <div class="stat"><strong>14</strong><span>Modules tested</span></div>
+          <div class="stat"><strong>2</strong><span>Critical findings</span></div>
+          <div class="stat"><strong>7</strong><span>High findings</span></div>
+          <div class="stat"><strong>5</strong><span>Medium findings</span></div>
+        </div>
+        <div class="hero-actions">
+          <button class="btn btn-primary" type="button" onclick="window.print()" aria-label="Download report as PDF">Download PDF ↓</button>
+          <a class="btn" href="https://github.com/kumarsivasai/CyberSNova_Internship" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub repository">GitHub Repo ↗</a>
+          <a class="btn btn-quiet" href="#findings">Explore findings ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="scope">
+      <div class="wrap">
+        <h2>Objectives & Scope</h2>
+        <div class="grid">
+          <article class="card"><h3>Objectives</h3><ul>
+            <li>Build and verify an isolated DVWA lab.</li><li>Identify common web application vulnerabilities.</li>
+            <li>Compare Low, Medium and High security levels.</li><li>Map findings to OWASP Top 10.</li>
+            <li>Rate risks and recommend remediation.</li><li>Document evidence professionally.</li>
+          </ul></article>
+          <article class="card"><h3>In scope</h3><ul>
+            <li>Local DVWA v2.5 at <code>127.0.0.1</code>.</li><li>Kali Linux 2025.1c, Apache, PHP 8.4 and MariaDB.</li>
+            <li>All 14 listed DVWA modules.</li><li>Low, Medium and High security levels.</li>
+          </ul></article>
+          <article class="card"><h3>Out of scope</h3><ul>
+            <li>External or production systems.</li><li>Denial-of-service testing.</li>
+            <li>Attacks on the host OS outside the lab.</li><li>Social engineering against real people or websites.</li>
+          </ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="methodology">
+      <div class="wrap">
+        <h2>Testing Methodology</h2>
+        <p class="muted">A structured, manual-first approach based on the OWASP Web Security Testing Guide (WSTG).</p>
+        <div class="grid">
+          <article class="card"><h3>01 · Planning & setup</h3><p>Define scope, prepare the virtual lab, install and configure DVWA.</p></article>
+          <article class="card"><h3>02 · Reconnaissance</h3><p>Review module inputs, parameters and normal behavior.</p></article>
+          <article class="card"><h3>03 · Identification</h3><p>Test inputs for weak validation, missing controls and unsafe data handling.</p></article>
+          <article class="card"><h3>04 · Controlled validation</h3><p>Confirm weaknesses in the authorized lab and record proof of concept.</p></article>
+          <article class="card"><h3>05 · Impact analysis</h3><p>Assess potential impact and assign severity.</p></article>
+          <article class="card"><h3>06 · Remediation</h3><p>Identify root causes, recommend fixes and compare the Impossible level.</p></article>
+          <article class="card"><h3>07 · Reporting</h3><p>Document findings, evidence, impact and recommendations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="environment">
+      <div class="wrap">
+        <h2>Tools & Lab Environment</h2>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Component</th><th>Details</th></tr></thead>
+          <tbody>
+            <tr><td>Host OS</td><td>Windows 11</td></tr><tr><td>Virtualization</td><td>Oracle VirtualBox</td></tr>
+            <tr><td>Attacker / target</td><td>Single Kali Linux 2025.1c VM</td></tr><tr><td>Web server</td><td>Apache</td></tr>
+            <tr><td>Server-side language</td><td>PHP 8.4</td></tr><tr><td>Database</td><td>MariaDB</td></tr>
+            <tr><td>Application</td><td>DVWA version 2.5</td></tr><tr><td>Network</td><td>Host-only adapter; local access at <code>http://127.0.0.1/DVWA/login.php</code></td></tr>
+          </tbody>
+        </table></div>
+        <h3 style="margin-top:24px">Tools used</h3>
+        <div class="grid">
+          <article class="card"><h3>Browser & DevTools</h3><p>Access modules and inspect requests, responses, cookies and page source.</p></article>
+          <article class="card"><h3>Burp Suite Community</h3><p>Intercept and modify HTTP requests with Proxy, Intruder and Repeater.</p></article>
+          <article class="card"><h3>sqlmap & Netcat</h3><p>Analyze SQL injection and receive connections within the lab.</p></article>
+          <article class="card"><h3>Supporting tools</h3><p>Python HTTP server, Mousepad text editor and screenshot tool.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="findings">
+      <div class="wrap">
+        <h2>Summary of Findings</h2>
+        <p class="muted">The following table reproduces the module names, OWASP mappings and severity stated in the project README. Use the search field to filter modules.</p>
+        <input class="search" id="filter" type="search" placeholder="Search modules or severity…" aria-label="Filter findings">
+        <div class="table-wrap"><table id="findingTable">
+          <thead><tr><th>Ref.</th><th>Module</th><th>OWASP Top 10 (2021)</th><th>Severity</th></tr></thead>
+          <tbody>
+            <tr><td>7.1</td><td>Brute Force</td><td>A07 – Identification and Authentication Failures</td><td><span class="pill high">High</span></td></tr>
+            <tr><td>7.2</td><td>Command Injection</td><td>A03 – Injection</td><td><span class="pill critical">Critical</span></td></tr>
+            <tr><td>7.3</td><td>Cross-Site Request Forgery (CSRF)</td><td>A01 – Broken Access Control</td><td><span class="pill medium">Medium</span></td></tr>
+            <tr><td>7.4</td><td>File Inclusion (LFI/RFI)</td><td>A03 – Injection</td><td><span class="pill high">High</span></td></tr>
+            <tr><td>7.5</td><td>File Upload</td><td>A04 – Insecure Design</td><td><span class="pill high">High</span></td></tr>
+            <tr><td>7.6</td><td>Insecure CAPTCHA</td><td>A07 – Identification and Authentication Failures</td><td><span class="pill medium">Medium</span></td></tr>
+            <tr><td>7.7</td><td>SQL Injection</td><td>A03 – Injection</td><td><span class="pill critical">Critical</span></td></tr>
+            <tr><td>7.8</td><td>SQL Injection (Blind)</td><td>A03 – Injection</td><td><span class="pill high">High</span></td></tr>
+            <tr><td>7.9</td><td>Weak Session IDs / Session Management</td><td>A07 – Identification and Authentication Failures</td><td><span class="pill high">High</span></td></tr>
+            <tr><td>7.10</td><td>Cross-Site Scripting (XSS), Reflected</td><td>A03 – Injection</td><td><span class="pill medium">Medium</span></td></tr>
+            <tr><td>7.11</td><td>Cross-Site Scripting (XSS), Stored</td><td>A03 – Injection</td><td><span class="pill high">High</span></td></tr>
+            <tr><td>7.12</td><td>Cross-Site Scripting (XSS), DOM-based</td><td>A03 – Injection</td><td><span class="pill medium">Medium</span></td></tr>
+            <tr><td>7.13</td><td>Content Security Policy (CSP) Bypass</td><td>A05 – Security Misconfiguration</td><td><span class="pill medium">Medium</span></td></tr>
+            <tr><td>7.14</td><td>API Testing</td><td>A01/A03</td><td><span class="pill high">High</span></td></tr>
+          </tbody>
+        </table></div>
+        <div class="notice" style="margin-top:20px"><strong>Key findings:</strong> The README identifies SQL Injection and Command Injection as Critical. It notes that partial protections may be bypassed, while parameterized queries, server-side validation, anti-CSRF tokens and output encoding are among the more effective defenses.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Evidence & Reporting Checklist</h2>
+        <div class="grid">
+          <article class="card"><h3>Capture</h3><ul><li>Show the module and security level.</li><li>Include relevant source code.</li><li>Record the request or payload used.</li><li>Capture the resulting response.</li></ul></article>
+          <article class="card"><h3>Label</h3><ul><li>Use figure labels such as Fig 7.1.1.</li><li>Add a descriptive caption to each screenshot.</li><li>Record blocked attempts honestly.</li><li>Ensure every figure reference has a matching image.</li></ul></article>
+          <article class="card"><h3>Protect</h3><ul><li>Keep evidence beside the related finding.</li><li>Crop unrelated personal or terminal information.</li><li>Use lab-only credentials only inside the isolated lab.</li><li>Take a VM snapshot before testing.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="safety">
+      <div class="wrap">
+        <h2>Rules of Engagement & Disclaimer</h2>
+        <div class="notice">
+          All testing must remain within the locally hosted DVWA instance in the isolated lab. The target is not to be exposed to the internet. No denial-of-service testing, attacks on external systems, or social engineering against real people are permitted. Take a VM snapshot before testing and restore it if needed.
+        </div>
+        <p class="muted" style="margin-top:18px">This page is a web presentation of the supplied README, not a replacement for the full technical report. Detailed per-step evidence and exploit results should be added only where they are documented and verified.</p>
+        <button class="btn" type="button" onclick="window.print()">Print / Save as PDF</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">DVWA Penetration Testing Report · CyberSNova Cyber Security Internship</footer>
+  <script>
+    const filter = document.getElementById('filter');
+    const rows = document.querySelectorAll('#findingTable tbody tr');
+    filter.addEventListener('input', () => {
+      const query = filter.value.toLowerCase().trim();
+      rows.forEach(row => {
+        row.hidden = !row.textContent.toLowerCase().includes(query);
+      });
+    });
+  </script>
+</body>
+</html>

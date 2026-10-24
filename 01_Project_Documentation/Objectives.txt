@@ -1,0 +1,129 @@
+============================================================
+CYBERSNOVA
+CYBER SECURITY INTERNSHIP
+
+PROJECT 2: PORTSWIGGER WEB SECURITY ACADEMY LABS
+ASSESSMENT OBJECTIVES
+============================================================
+
+1. PRIMARY OBJECTIVE
+============================================================
+
+To develop practical web application security testing skills
+by completing five Apprentice-level laboratories from the
+PortSwigger Web Security Academy.
+
+============================================================
+
+2. TECHNICAL OBJECTIVES
+============================================================
+
+The assessment aims to achieve the following:
+
+1. Understand the functionality and attack surface of each
+   assigned laboratory.
+
+2. Identify security weaknesses in intentionally vulnerable
+   web applications.
+
+3. Capture and analyze HTTP requests and responses using
+   Burp Suite Community Edition.
+
+4. Identify vulnerable parameters, headers, cookies, or
+   application functionality.
+
+5. Reproduce vulnerabilities in a controlled and authorized
+   environment.
+
+6. Understand how attacker-controlled input affects application
+   behavior.
+
+7. Validate successful exploitation using appropriate
+   technical evidence.
+
+8. Understand the potential security impact of each
+   vulnerability in a real-world application.
+
+9. Identify the likely root cause of each vulnerability.
+
+10. Recommend appropriate security controls and remediation
+    techniques.
+
+============================================================
+
+3. LEARNING OBJECTIVES
+============================================================
+
+By completing the five laboratories, the tester should gain
+practical understanding of:
+
+- Web application architecture.
+- HTTP request and response handling.
+- Parameters and user-controlled input.
+- Authentication and session concepts.
+- Authorization and access control.
+- Injection vulnerabilities.
+- Cross-Site Scripting.
+- Cross-Site Request Forgery.
+- Input validation.
+- Output encoding.
+- Secure application design.
+- Burp Suite testing methodology.
+
+============================================================
+
+4. BURP SUITE OBJECTIVES
+============================================================
+
+The following Burp Suite capabilities will be used where
+required:
+
+- Proxy
+- HTTP history
+- Repeater
+- Target / Site map
+- Request and response inspection
+
+The tester will use these capabilities to understand,
+modify, replay, and analyze HTTP traffic within the
+authorized laboratory environment.
+
+============================================================
+
+5. DOCUMENTATION OBJECTIVES
+============================================================
+
+For every completed laboratory, the assessment will document:
+
+- Lab title.
+- Vulnerability type.
+- Difficulty level.
+- Target functionality.
+- Testing methodology.
+- Baseline behavior.
+- Exploitation procedure.
+- Technical evidence.
+- Successful completion proof.
+- Security impact.
+- Root cause.
+- Recommended mitigation.
+- Key learning outcome.
+
+============================================================
+
+6. PROFESSIONAL OBJECTIVE
+============================================================
+
+The final deliverable should demonstrate the ability to perform
+a structured web application security assessment and communicate
+technical findings clearly in a professional Vulnerability
+Assessment / Penetration Testing style report.
+
+============================================================
+
+Prepared By: Mallampalli Kumar Siva Sai
+Organization: CyberSNova
+Lab Level: Intermediate Level
+Date: 07-10-2025
+
+============================================================

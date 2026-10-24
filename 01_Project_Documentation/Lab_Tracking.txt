@@ -1,0 +1,411 @@
+============================================================
+CYBERSNOVA
+CYBER SECURITY INTERNSHIP
+
+PROJECT 2: PORTSWIGGER WEB SECURITY ACADEMY LABS
+LAB TRACKING SHEET
+============================================================
+
+1. PURPOSE
+============================================================
+
+This document is used to track the progress, evidence, and
+completion status of the five selected Apprentice-level
+PortSwigger Web Security Academy laboratories.
+
+The tracking sheet will be updated as each laboratory is
+completed and documented.
+
+============================================================
+
+2. LAB STATUS DEFINITIONS
+============================================================
+
+NOT STARTED
+The laboratory has not yet been tested.
+
+IN PROGRESS
+Testing has started but the laboratory has not yet been
+successfully completed.
+
+COMPLETED
+The laboratory has been successfully solved and completion
+evidence has been captured.
+
+DOCUMENTED
+The laboratory has been solved, evidence collected, and the
+corresponding report section has been completed.
+
+============================================================
+
+3. LAB TRACKING
+============================================================
+
+LAB-01
+------------------------------------------------------------
+
+Lab Title:
+SQL injection vulnerability in WHERE clause allowing
+retrieval of hidden data
+
+Vulnerability:
+SQL Injection
+
+Difficulty:
+Apprentice
+
+Status:
+NOT STARTED
+
+Lab URL:
+[To be recorded after launching the lab]
+
+Start Date:
+[To be recorded]
+
+Completion Date:
+[To be recorded]
+
+Evidence Folder:
+02_Lab_Evidence\LAB-01\
+
+Evidence Required:
+- Lab page screenshot
+- Baseline evidence
+- Exploitation evidence
+- Successful completion screenshot
+
+Completion Proof:
+[Pending]
+
+Report Status:
+NOT STARTED
+
+------------------------------------------------------------
+
+LAB-02
+------------------------------------------------------------
+
+Lab Title:
+CSRF vulnerability with no defenses
+
+Vulnerability:
+Cross-Site Request Forgery (CSRF)
+
+Difficulty:
+Apprentice
+
+Status:
+NOT STARTED
+
+Lab URL:
+[To be recorded after launching the lab]
+
+Start Date:
+[To be recorded]
+
+Completion Date:
+[To be recorded]
+
+Evidence Folder:
+02_Lab_Evidence\LAB-02\
+
+Evidence Required:
+- Lab page screenshot
+- Baseline evidence
+- Exploitation evidence
+- Successful completion screenshot
+
+Completion Proof:
+[Pending]
+
+Report Status:
+NOT STARTED
+
+------------------------------------------------------------
+
+LAB-03
+------------------------------------------------------------
+
+Lab Title:
+OS command injection, simple case
+
+Vulnerability:
+OS Command Injection
+
+Difficulty:
+Apprentice
+
+Status:
+NOT STARTED
+
+Lab URL:
+[To be recorded after launching the lab]
+
+Start Date:
+[To be recorded]
+
+Completion Date:
+[To be recorded]
+
+Evidence Folder:
+02_Lab_Evidence\LAB-03\
+
+Evidence Required:
+- Lab page screenshot
+- Baseline evidence
+- Exploitation evidence
+- Successful completion screenshot
+
+Completion Proof:
+[Pending]
+
+Report Status:
+NOT STARTED
+
+------------------------------------------------------------
+
+LAB-04
+------------------------------------------------------------
+
+Lab Title:
+2FA simple bypass
+
+Vulnerability:
+Authentication Vulnerability
+
+Difficulty:
+Apprentice
+
+Status:
+NOT STARTED
+
+Lab URL:
+[To be recorded after launching the lab]
+
+Start Date:
+[To be recorded]
+
+Completion Date:
+[To be recorded]
+
+Evidence Folder:
+02_Lab_Evidence\LAB-04\
+
+Evidence Required:
+- Lab page screenshot
+- Baseline evidence (normal authentication flow)
+- Exploitation evidence
+- Successful completion screenshot
+
+Completion Proof:
+[Pending]
+
+Report Status:
+NOT STARTED
+
+------------------------------------------------------------
+
+LAB-05
+------------------------------------------------------------
+
+Lab Title:
+File path traversal, simple case
+
+Vulnerability:
+Path Traversal
+
+Difficulty:
+Apprentice
+
+Status:
+NOT STARTED
+
+Lab URL:
+[To be recorded after launching the lab]
+
+Start Date:
+[To be recorded]
+
+Completion Date:
+[To be recorded]
+
+Evidence Folder:
+02_Lab_Evidence\LAB-05\
+
+Evidence Required:
+- Lab page screenshot
+- Baseline evidence
+- Exploitation evidence
+- Successful completion screenshot
+
+Completion Proof:
+[Pending]
+
+Report Status:
+NOT STARTED
+
+============================================================
+4. OVERALL PROGRESS
+============================================================
+
+Total Labs Required:
+5
+
+Labs Completed:
+0 / 5
+
+Labs Documented:
+0 / 5
+
+Evidence Sets Completed:
+0 / 5
+
+Overall Status:
+NOT STARTED
+
+============================================================
+5. SELECTED VULNERABILITY CATEGORIES
+============================================================
+
+LAB-01:
+SQL Injection
+
+LAB-02:
+Cross-Site Request Forgery (CSRF)
+
+LAB-03:
+OS Command Injection
+
+LAB-04:
+Authentication Vulnerability
+
+LAB-05:
+Path Traversal
+
+============================================================
+6. EVIDENCE NAMING STANDARD
+============================================================
+
+Each laboratory will follow the same evidence naming
+convention.
+
+LAB-01:
+LAB-01-01-Lab-Page.png
+LAB-01-02-Baseline.png
+LAB-01-03-Exploitation.png
+LAB-01-04-Solved.png
+
+LAB-02:
+LAB-02-01-Lab-Page.png
+LAB-02-02-Baseline.png
+LAB-02-03-Exploitation.png
+LAB-02-04-Solved.png
+
+LAB-03:
+LAB-03-01-Lab-Page.png
+LAB-03-02-Baseline.png
+LAB-03-03-Exploitation.png
+LAB-03-04-Solved.png
+
+LAB-04:
+LAB-04-01-Lab-Page.png
+LAB-04-02-Baseline.png
+LAB-04-03-Exploitation.png
+LAB-04-04-Solved.png
+
+LAB-05:
+LAB-05-01-Lab-Page.png
+LAB-05-02-Baseline.png
+LAB-05-03-Exploitation.png
+LAB-05-04-Solved.png
+
+============================================================
+7. FINAL SUBMISSION CHECKLIST
+============================================================
+
+PROJECT SETUP
+
+[✓] Project directory created.
+[✓] Documentation directory created.
+[✓] Evidence directory created.
+[✓] Five laboratory directories created.
+[✓] Report directory created.
+[✓] Project documentation prepared.
+[✓] Five Apprentice-level labs selected.
+
+LAB COMPLETION
+
+[ ] LAB-01 completed.
+[ ] LAB-02 completed.
+[ ] LAB-03 completed.
+[ ] LAB-04 completed.
+[ ] LAB-05 completed.
+
+EVIDENCE
+
+[ ] LAB-01 evidence collected.
+[ ] LAB-02 evidence collected.
+[ ] LAB-03 evidence collected.
+[ ] LAB-04 evidence collected.
+[ ] LAB-05 evidence collected.
+
+[ ] Lab page screenshots collected.
+[ ] Baseline evidence collected.
+[ ] Exploitation evidence collected.
+[ ] Lab completion proof collected.
+
+TECHNICAL DOCUMENTATION
+
+[ ] Vulnerability descriptions completed.
+[ ] Testing methodology documented.
+[ ] Exploitation procedures documented.
+[ ] Security impact documented.
+[ ] Root cause documented.
+[ ] Mitigation recommendations documented.
+[ ] Key learning documented.
+
+FINAL REPORT
+
+[ ] All five labs included.
+[ ] All screenshots referenced.
+[ ] Evidence cross-referenced.
+[ ] Report formatting reviewed.
+[ ] Technical accuracy reviewed.
+[ ] Grammar and spelling reviewed.
+[ ] Final submission package reviewed.
+
+============================================================
+8. PROJECT COMPLETION CRITERIA
+============================================================
+
+The project will be considered complete when:
+
+1. Five Apprentice-level laboratories have been successfully
+   solved.
+
+2. Evidence has been collected for each laboratory.
+
+3. Successful completion has been verified on PortSwigger.
+
+4. Each vulnerability has been technically explained.
+
+5. Exploitation procedures have been documented.
+
+6. Security impact has been assessed.
+
+7. Appropriate mitigation techniques have been provided.
+
+8. All findings have been incorporated into the final
+   technical report.
+
+9. Evidence and report references have been cross-checked.
+
+============================================================
+
+Prepared By: Mallampalli Kumar Siva Sai
+Organization: CyberSNova
+Lab Level: Intermediate Level
+Date: 07-10-2026
+
+============================================================

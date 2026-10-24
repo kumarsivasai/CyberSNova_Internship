@@ -1,0 +1,177 @@
+============================================================
+CYBERSNOVA
+CYBER SECURITY INTERNSHIP
+
+PROJECT 2: PORTSWIGGER WEB SECURITY ACADEMY LABS
+RULES OF ENGAGEMENT
+============================================================
+
+1. PURPOSE
+============================================================
+
+This document defines the rules and boundaries that govern
+security testing performed during Project 2 of the CyberSNova
+Cyber Security Internship.
+
+The purpose is to ensure that all testing remains controlled,
+authorized, ethical, and limited to the designated PortSwigger
+Web Security Academy laboratory environments.
+
+============================================================
+
+2. AUTHORIZED TARGETS
+============================================================
+
+Testing is authorized only against the unique laboratory
+environment provided by PortSwigger after a lab has been
+launched.
+
+The tester must verify the target URL before beginning
+security testing.
+
+Only the currently assigned laboratory target is considered
+in scope.
+
+============================================================
+
+3. AUTHORIZED ACTIVITIES
+============================================================
+
+The following activities are permitted within the assigned
+laboratory:
+
+- Manual application reconnaissance.
+- Normal application interaction.
+- HTTP request and response inspection.
+- Parameter analysis.
+- Controlled input manipulation.
+- Request modification using Burp Suite.
+- Request replay using Burp Repeater.
+- Vulnerability validation.
+- Controlled exploitation required to solve the laboratory.
+- Security impact analysis.
+- Evidence collection.
+- Documentation of findings and remediation.
+
+============================================================
+
+4. PROHIBITED ACTIVITIES
+============================================================
+
+The following activities are prohibited:
+
+- Testing unrelated websites or applications.
+- Testing systems outside the assigned laboratory.
+- Denial-of-Service attacks.
+- Destructive testing.
+- Malware installation or deployment.
+- Persistence attempts.
+- Unauthorized access to unrelated accounts.
+- Social engineering.
+- Phishing.
+- Attacks against third-party infrastructure.
+- Deliberate disruption of services.
+- Collection of unnecessary personal information.
+
+============================================================
+
+5. DATA HANDLING
+============================================================
+
+Only information required to demonstrate the laboratory
+vulnerability will be collected.
+
+The tester will not intentionally collect or retain
+unnecessary personal information, credentials, authentication
+tokens, or session information.
+
+Screenshots used in the final report must contain only the
+information necessary to demonstrate the security testing
+activity.
+
+============================================================
+
+6. TESTING INTENSITY
+============================================================
+
+Testing will be performed using the minimum level of activity
+required to validate the vulnerability and complete the
+assigned laboratory.
+
+Automated or high-volume testing will not be performed unless
+explicitly required by the laboratory.
+
+============================================================
+
+7. BURP SUITE USAGE
+============================================================
+
+Burp Suite Community Edition will be used to inspect and
+modify traffic associated with the authorized laboratory.
+
+The tester will verify the destination of requests before
+sending modified requests.
+
+============================================================
+
+8. EVIDENCE REQUIREMENTS
+============================================================
+
+Evidence must accurately represent the tester's own testing.
+
+Screenshots must:
+
+- Show the relevant application or Burp request.
+- Clearly demonstrate the testing action or result.
+- Use meaningful filenames.
+- Be stored in the correct LAB folder.
+- Avoid unnecessary sensitive information.
+
+============================================================
+
+9. LAB COMPLETION
+============================================================
+
+A laboratory will be considered successfully completed only
+when the PortSwigger platform confirms that the laboratory has
+been solved.
+
+The completion status will be captured as supporting evidence.
+
+============================================================
+
+10. RESPONSIBLE TESTING
+============================================================
+
+The tester will stop testing if a request appears to leave
+the authorized PortSwigger laboratory environment.
+
+Any unexpected behavior affecting an external system will not
+be pursued.
+
+============================================================
+
+11. PROFESSIONAL CONDUCT
+============================================================
+
+All activities will follow responsible security-testing
+principles.
+
+The assessment will prioritize:
+
+- Authorization.
+- Scope control.
+- Minimal impact.
+- Accurate evidence.
+- Reproducibility.
+- Professional documentation.
+- Appropriate remediation.
+
+============================================================
+
+Prepared By: Mallampalli Kumar Siva Sai
+Organization: CyberSNova
+Lab Level: Intermediate Level
+Date: 07-10-2026
+
+============================================================

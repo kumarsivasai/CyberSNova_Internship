@@ -1,0 +1,270 @@
+============================================================
+CYBERSNOVA
+CYBER SECURITY INTERNSHIP
+
+PROJECT 2: PORTSWIGGER WEB SECURITY ACADEMY LABS
+TESTING METHODOLOGY
+============================================================
+
+1. PURPOSE
+============================================================
+
+This document defines the structured methodology followed
+during the assessment of five authorized PortSwigger Web
+Security Academy laboratories.
+
+The methodology is designed to provide a clear, repeatable,
+and professional approach to vulnerability identification,
+validation, exploitation, evidence collection, and remediation.
+
+============================================================
+
+2. ASSESSMENT PHASES
+============================================================
+
+The testing process consists of the following phases:
+
+Phase 1  - Lab Selection
+Phase 2  - Target Identification
+Phase 3  - Application Reconnaissance
+Phase 4  - HTTP Traffic Analysis
+Phase 5  - Vulnerability Identification
+Phase 6  - Controlled Exploitation
+Phase 7  - Result Validation
+Phase 8  - Evidence Collection
+Phase 9  - Impact Assessment
+Phase 10 - Remediation Analysis
+Phase 11 - Documentation
+
+============================================================
+
+3. PHASE 1 - LAB SELECTION
+============================================================
+
+Five Apprentice-level laboratories will be selected from the
+PortSwigger Web Security Academy.
+
+The selected laboratories should provide exposure to different
+web application security concepts.
+
+The final selected labs will be recorded in the Lab Tracking
+document.
+
+============================================================
+
+4. PHASE 2 - TARGET IDENTIFICATION
+============================================================
+
+After launching a laboratory, the unique target URL supplied
+by PortSwigger will be identified.
+
+The tester will verify that all testing is performed against
+the currently assigned laboratory environment.
+
+The unique lab URL will be recorded as part of the evidence
+and report documentation.
+
+============================================================
+
+5. PHASE 3 - APPLICATION RECONNAISSANCE
+============================================================
+
+The application will first be explored normally without
+attempting exploitation.
+
+The tester will identify:
+
+- Available pages.
+- Application functionality.
+- Input fields.
+- Parameters.
+- Forms.
+- Authentication functionality.
+- Product or data functionality.
+- Relevant URLs and endpoints.
+
+The purpose is to understand normal application behavior
+before performing security testing.
+
+============================================================
+
+6. PHASE 4 - HTTP TRAFFIC ANALYSIS
+============================================================
+
+Burp Suite Community Edition will be used to capture and
+inspect HTTP requests and responses.
+
+The tester will review:
+
+- HTTP methods.
+- URLs.
+- Parameters.
+- Headers.
+- Cookies.
+- Request bodies.
+- Response status codes.
+- Response content.
+
+Relevant requests will be identified for further analysis.
+
+============================================================
+
+7. PHASE 5 - VULNERABILITY IDENTIFICATION
+============================================================
+
+The tester will analyze application behavior and identify
+the parameter or functionality related to the vulnerability
+described by the selected laboratory.
+
+Testing will be performed using controlled inputs appropriate
+to the laboratory objective.
+
+A normal request will be established before modifying the
+request wherever practical.
+
+============================================================
+
+8. PHASE 6 - CONTROLLED EXPLOITATION
+============================================================
+
+Once a potentially vulnerable parameter or function is
+identified, the request may be modified and replayed using
+Burp Suite Repeater.
+
+Only the minimum testing required to demonstrate the
+vulnerability will be performed.
+
+The exploitation process will remain limited to the
+authorized PortSwigger laboratory.
+
+============================================================
+
+9. PHASE 7 - RESULT VALIDATION
+============================================================
+
+The tester will compare normal and modified application
+behavior.
+
+Validation may include:
+
+- Changed HTTP response.
+- Unexpected application behavior.
+- Unauthorized data access.
+- Authentication bypass.
+- Script execution.
+- Modified server-side behavior.
+- Successful laboratory completion.
+
+The PortSwigger laboratory's solved/completed status will
+also be captured as completion evidence.
+
+============================================================
+
+10. PHASE 8 - EVIDENCE COLLECTION
+============================================================
+
+Screenshots will be captured at important stages of each
+laboratory.
+
+Evidence will normally include:
+
+1. Lab page / objective.
+2. Normal or baseline request.
+3. Exploitation request and response.
+4. Successful lab completion.
+
+Evidence will be stored in the corresponding LAB folder.
+
+============================================================
+
+11. PHASE 9 - IMPACT ASSESSMENT
+============================================================
+
+For each vulnerability, the potential security impact will
+be documented.
+
+The impact assessment will consider:
+
+- Confidentiality.
+- Integrity.
+- Availability.
+- Authentication.
+- Authorization.
+- User data exposure.
+- Potential attacker capabilities.
+
+Where appropriate, the vulnerability severity will be
+classified using standard security assessment principles.
+
+============================================================
+
+12. PHASE 10 - REMEDIATION ANALYSIS
+============================================================
+
+For each identified vulnerability, appropriate defensive
+measures will be recommended.
+
+Recommendations may include:
+
+- Server-side input validation.
+- Parameterized queries.
+- Output encoding.
+- Secure authentication mechanisms.
+- Proper authorization checks.
+- CSRF protection.
+- Secure session management.
+- Security headers.
+- Secure application design.
+- Appropriate access controls.
+
+Recommendations will be specific to the vulnerability rather
+than generic security advice.
+
+============================================================
+
+13. PHASE 11 - DOCUMENTATION
+============================================================
+
+Each completed laboratory will be documented using a consistent
+technical reporting format:
+
+- Lab Title.
+- Vulnerability.
+- Difficulty.
+- Objective.
+- Target Functionality.
+- Testing Methodology.
+- Baseline Behavior.
+- Exploitation Procedure.
+- Evidence.
+- Successful Result.
+- Security Impact.
+- Root Cause.
+- Remediation.
+- Key Learning.
+
+============================================================
+
+14. QUALITY ASSURANCE
+============================================================
+
+Before final submission, each laboratory will be reviewed to
+ensure:
+
+- The lab is successfully completed.
+- Screenshots clearly demonstrate the result.
+- Evidence corresponds to the correct laboratory.
+- Exploitation steps are reproducible.
+- Technical explanations are accurate.
+- Mitigation recommendations are appropriate.
+- No unrelated systems are included.
+- The report contains consistent formatting.
+
+============================================================
+
+Prepared By: Mallampalli Kumar Siva Sai
+Organization: CyberSNova
+Lab Level: Intermediate Level
+Date: 07-10-2026
+
+============================================================

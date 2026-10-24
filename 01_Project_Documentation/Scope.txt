@@ -1,0 +1,137 @@
+============================================================
+CYBERSNOVA
+CYBER SECURITY INTERNSHIP
+
+PROJECT 2: PORTSWIGGER WEB SECURITY ACADEMY LABS
+SCOPE DEFINITION
+============================================================
+
+1. PURPOSE
+============================================================
+
+This document defines the scope of the security assessment
+performed as part of Project 2 of the CyberSNova Cyber Security
+Internship.
+
+The purpose of defining scope is to ensure that all security
+testing remains within the authorized PortSwigger Web Security
+Academy training environment.
+
+============================================================
+
+2. IN-SCOPE ENVIRONMENT
+============================================================
+
+The following environment is authorized for testing:
+
+Platform:
+PortSwigger Web Security Academy
+
+Website:
+https://portswigger.net/web-security
+
+Target:
+Individual laboratory environments provided by PortSwigger
+after launching a selected lab.
+
+The assessment will be restricted to the unique lab instance
+provided by PortSwigger for the tester.
+
+============================================================
+
+3. TESTING SCOPE
+============================================================
+
+The following activities are considered within scope:
+
+- Web application reconnaissance within the assigned lab.
+- Manual inspection of application functionality.
+- HTTP request and response analysis.
+- Parameter analysis.
+- Input validation testing.
+- Authentication testing where applicable.
+- Authorization testing where applicable.
+- Injection testing where applicable.
+- Cross-Site Scripting testing where applicable.
+- Cross-Site Request Forgery testing where applicable.
+- Other vulnerability testing specifically required by the
+  selected PortSwigger laboratory.
+- Controlled exploitation necessary to complete the lab.
+- Collection of technical evidence.
+- Documentation of security impact.
+- Development of mitigation recommendations.
+
+============================================================
+
+4. OUT-OF-SCOPE ACTIVITIES
+============================================================
+
+The following activities are explicitly outside the scope:
+
+- Testing unrelated websites.
+- Testing real-world production applications.
+- Testing third-party systems.
+- Denial-of-Service attacks.
+- Destructive attacks.
+- Malware deployment.
+- Persistence mechanisms.
+- Attacks against systems not belonging to the assigned lab.
+- Credential attacks against unrelated accounts.
+- Social engineering.
+- Phishing.
+- Any activity that could affect systems outside the
+  authorized PortSwigger laboratory.
+
+============================================================
+
+5. TESTING RESTRICTION
+============================================================
+
+Testing must remain limited to the authorized laboratory
+environment.
+
+Any request, domain, endpoint, or system that is not part of
+the assigned PortSwigger lab must be treated as out of scope.
+
+Testing will be performed manually or using Burp Suite features
+required to understand and validate the assigned vulnerability.
+
+============================================================
+
+6. EVIDENCE SCOPE
+============================================================
+
+Evidence collected during testing will include only information
+required to demonstrate the vulnerability and successful
+completion of the laboratory.
+
+Screenshots should avoid exposing:
+
+- Personal information.
+- Unnecessary authentication tokens.
+- Session cookies.
+- Passwords.
+- Unrelated browser information.
+- Information belonging to other users or systems.
+
+============================================================
+
+7. SCOPE VALIDATION
+============================================================
+
+Before testing each laboratory, the tester will verify:
+
+1. The lab has been launched through PortSwigger Web Security
+   Academy.
+2. The target belongs to the assigned laboratory.
+3. The target URL matches the active lab instance.
+4. Testing is performed only against the authorized target.
+
+============================================================
+
+Prepared By: Mallampalli Kumar Siva Sai
+Organization: CyberSNova
+Lab Level: Intermediate Level
+Date: 07-10-2026
+
+============================================================
